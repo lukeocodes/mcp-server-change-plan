@@ -63,4 +63,7 @@ logs
 .temp/
 .tmp/
 tmp/
-temp/ 
+temp/
+
+# MCP
+storage/
