@@ -1,0 +1,27 @@
+{
+  "name": "mcp-server-change-plan",
+  "version": "1.0.0",
+  "description": "MCP server for managing change plans with multiple steps. Supports creating plans, adding steps with context, retrieving the next step to work on, and marking steps as complete. Enables methodical execution of complex task sequences by AI agents.",
+  "license": "MIT",
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://lu.ke.wtf)",
+  "homepage": "https://github.com/lukeoliff/mcp-server-change-plan",
+  "bugs": "https://github.com/lukeoliff/mcp-server-change-plan/issues",
+  "type": "module",
+  "bin": {
+    "mcp-server-change-plan": "mcp-server.js"
+  },
+  "scripts": {
+    "start": "node mcp-server.js",
+    "docs": "node scripts/generate_api_docs.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^24.2.4",
+    "semantic-release-plugin-update-version-in-files": "^2.0.0"
+  }
+}

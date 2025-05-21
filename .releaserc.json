@@ -1,0 +1,31 @@
+{
+  "branches": [{ "name": "main" }],
+  "plugins": [
+    [
+      "semantic-release-plugin-update-version-in-files",
+      {
+        "files": [
+          "version.js"
+        ],
+        "placeholder": "0.0.0-autogenerate.0"
+      }
+    ],
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "Change Log"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["package.json", "CHANGELOG.md"]
+      }
+    ],
+    "@semantic-release/github"
+  ]
+}
